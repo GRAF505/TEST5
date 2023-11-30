@@ -1,0 +1,63 @@
+body{
+  
+    background-image: URL("https://w.forfun.com/fetch/8a/8acef25340d19f64f1f3996ebfe71b5c.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+.car {
+  position: absolute;
+  top: 70%;
+  left: -100px; /* Начальная точка появления слева */
+  width: 120px;
+  height: 50px;
+  border-radius: 25px;
+  background: linear-gradient(blue, pink);
+  animation: moveRight 15s linear infinite; /* Анимация движения вправо */
+}
+
+@keyframes moveRight {
+  0% {
+      left: -100px; /* Начальная точка появления слева */
+  }
+
+  100% {
+      left: calc(85% + 50px); /* Конечная точка появления справа */
+  }
+}
+
+.window{
+  position: absolute;
+  width: 18px;
+  height: 20px;
+  top: 5px;
+  background-color: aqua;
+  border-radius: 10%;
+}
+.window-left{
+  left: 25px;
+}
+.window-right{
+  right: 25px;
+}
+/* Стили для колес */
+.wheel {
+  position: absolute;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: #2a2929;
+  border-radius: 50%;
+  margin-top: 10%;
+}
+
+.front-wheel {
+  left: 10px;
+}
+
+.back-wheel {
+  right: 10px;
+}
